@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#0b0a09"/><text x="100" y="112" font-family="Georgia,serif" font-size="64" fill="#e8580c" text-anchor="middle">M</text></svg></template>
+<meta name="ext-resource-dependency" content="assets/olive-main.jpg">
+<meta name="ext-resource-dependency" content="assets/olive-old-s.jpg">
+<meta name="ext-resource-dependency" content="assets/olive-old-m.jpg">
+<meta name="ext-resource-dependency" content="assets/olive-old-l.jpg">
+<meta name="ext-resource-dependency" content="assets/olive-old-xl.jpg">
+<meta name="ext-resource-dependency" content="assets/yucca-rostrata.jpg">
+<meta name="ext-resource-dependency" content="assets/cycas-revoluta.jpg">
+<meta name="ext-resource-dependency" content="assets/agave-americana.jpg">
+<meta name="ext-resource-dependency" content="assets/dracena-draco.jpg">
+<meta name="ext-resource-dependency" content="assets/palm-washingtonia.jpg">
+<meta name="ext-resource-dependency" content="assets/palm-phoenix-canariensis.jpg">
+<meta name="ext-resource-dependency" content="assets/palm-phoenix-dactylifera.jpg">
+<meta name="ext-resource-dependency" content="assets/palm-chamaerops-humilis.jpg">
+<meta name="ext-resource-dependency" content="assets/palm-trachycarpus-fortunei.jpg">
+<meta name="ext-resource-dependency" content="assets/inspiration-wedding.jpg">
+<meta name="ext-resource-dependency" content="assets/inspiration-festival.jpg">
+<meta name="ext-resource-dependency" content="assets/inspiration-hotel.jpg">
+<meta name="ext-resource-dependency" content="assets/inspiration-restaurant.jpg">
+<meta name="ext-resource-dependency" content="assets/inspiration-vip.jpg">
+<meta name="ext-resource-dependency" content="assets/inspiration-private.jpg">
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ModuleXVB Decor — Premium Mediterranean Plants &amp; Event Decor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes glowPulse { 0%, 100% { opacity: 0.55; } 50% { opacity: 0.9; } }
+    @media (max-width: 980px) {
+      .__desktop-nav { display: none !important; }
+      .__mobile-toggle { display: flex !important; }
+      .__about-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
+      .__why-grid { grid-template-columns: 1fr !important; }
+      .__cards-4 { grid-template-columns: repeat(2,1fr) !important; }
+      .__cards-5 { grid-template-columns: repeat(2,1fr) !important; }
+      .__cards-3 { grid-template-columns: 1fr !important; }
+      .__insp-grid { grid-template-columns: repeat(2,1fr) !important; }
+      .__service-grid { grid-template-columns: repeat(2,1fr) !important; gap: 40px !important; }
+      .__benefits-grid { grid-template-columns: repeat(2,1fr) !important; }
+      .__footer-grid { grid-template-columns: 1fr !important; gap: 34px !important; }
+    }
+    @media (max-width: 560px) {
+      .__cards-4, .__cards-5, .__insp-grid, .__benefits-grid, .__service-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</helmet>
+
+<div style="--bg:#0b0a09; --bg2:#141210; --panel:#1b1815; --panel2:#201c18; --ink:#f4efe8; --muted:#b6ac9f; --gold:#e8580c; --gold2:#ff9a4d; --line:rgba(232,88,12,0.28); --serif:'Playfair Display',Georgia,serif; --script:'Great Vibes',cursive; --sans:'Montserrat',Arial,sans-serif; background:var(--bg); color:var(--ink); font-family:var(--sans); position:relative; overflow-x:hidden; min-height:100vh;">
+
+  <!-- HEADER -->
+  <header data-screen-label="header" style="{{ headerStyle }}">
+    <div style="max-width:1360px; margin:0 auto; padding:14px 28px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+      <a href="#home" style="display:flex; align-items:center; gap:0; flex-shrink:0;">
+        <img src="assets/logo.png" alt="ModuleXVB" style="height:42px; width:auto; display:block;" />
+      </a>
+
+      <nav style="display:flex; align-items:center; gap:34px;" class="__desktop-nav">
+        <a href="#home" onClick="{{ closeNav }}" style="color:var(--ink); text-decoration:none; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; font-weight:500; opacity:0.85; transition:opacity .25s, color .25s;" style-hover="opacity:1; color:var(--gold2);">{{ t.nav.home }}</a>
+        <a href="#about" onClick="{{ closeNav }}" style="color:var(--ink); text-decoration:none; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; font-weight:500; opacity:0.85; transition:opacity .25s, color .25s;" style-hover="opacity:1; color:var(--gold2);">{{ t.nav.about }}</a>
+        <a href="#collection" onClick="{{ closeNav }}" style="color:var(--ink); text-decoration:none; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; font-weight:500; opacity:0.85; transition:opacity .25s, color .25s;" style-hover="opacity:1; color:var(--gold2);">{{ t.nav.collection }}</a>
+        <a href="#inspiration" onClick="{{ closeNav }}" style="color:var(--ink); text-decoration:none; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; font-weight:500; opacity:0.85; transition:opacity .25s, color .25s;" style-hover="opacity:1; color:var(--gold2);">{{ t.nav.inspiration }}</a>
+        <a href="#services" onClick="{{ closeNav }}" style="color:var(--ink); text-decoration:none; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; font-weight:500; opacity:0.85; transition:opacity .25s, color .25s;" style-hover="opacity:1; color:var(--gold2);">{{ t.nav.services }}</a>
+        <a href="#contact" onClick="{{ closeNav }}" style="color:var(--ink); text-decoration:none; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; font-weight:500; opacity:0.85; transition:opacity .25s, color .25s;" style-hover="opacity:1; color:var(--gold2);">{{ t.nav.contact }}</a>
+      </nav>
+
+      <div style="display:flex; align-items:center; gap:18px; flex-shrink:0;">
+        <div style="display:flex; align-items:center; border:1px solid var(--line); border-radius:20px; overflow:hidden;">
+          <button onClick="{{ setLangSr }}" style="{{ langSrStyle }}">SR</button>
+          <button onClick="{{ setLangEn }}" style="{{ langEnStyle }}">EN</button>
+        </div>
+        <button onClick="{{ toggleNav }}" class="__mobile-toggle" style="display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px;">
+          <span style="width:24px; height:2px; background:var(--ink); display:block;"></span>
+          <span style="width:24px; height:2px; background:var(--ink); display:block;"></span>
+          <span style="width:24px; height:2px; background:var(--ink); display:block;"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- mobile nav overlay -->
+    <div style="{{ mobileNavStyle }}">
+      <a href="#home" onClick="{{ closeNav }}" style="color:var(--ink); text-decoration:none; font-family:var(--serif); font-size:26px;">{{ t.nav.home }}</a>
+      <a href="#about" onClick="{{ closeNav }}" style="color:var(--ink); text-decoration:none; font-family:var(--serif); font-size:26px;">{{ t.nav.about }}</a>
+      <a href="#collection" onClick="{{ closeNav }}" style="color:var(--ink); text-decoration:none; font-family:var(--serif); font-size:26px;">{{ t.nav.collection }}</a>
+      <a href="#inspiration" onClick="{{ closeNav }}" style="color:var(--ink); text-decoration:none; font-family:var(--serif); font-size:26px;">{{ t.nav.inspiration }}</a>
+      <a href="#services" onClick="{{ closeNav }}" style="color:var(--ink); text-decoration:none; font-family:var(--serif); font-size:26px;">{{ t.nav.services }}</a>
+      <a href="#contact" onClick="{{ closeNav }}" style="color:var(--ink); text-decoration:none; font-family:var(--serif); font-size:26px;">{{ t.nav.contact }}</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" data-screen-label="hero" style="position:relative; min-height:100vh; display:flex; align-items:flex-end; overflow:hidden;">
+    <img src="assets/hero-mediterranean.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;" />
+    <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(11,10,9,0.35) 0%, rgba(11,10,9,0.55) 55%, rgba(11,10,9,0.96) 100%);"></div>
+    <div style="position:absolute; left:8%; top:36%; width:420px; height:420px; border-radius:50%; background:radial-gradient(circle, rgba(232,88,12,0.35), transparent 70%); filter:blur(40px); animation:glowPulse 6s ease-in-out infinite;"></div>
+
+    <div style="position:relative; z-index:2; max-width:1360px; margin:0 auto; padding:220px 28px 100px; width:100%;">
+      <div style="max-width:760px; animation:fadeInUp 1s ease both;">
+        <div style="font-family:var(--sans); font-size:13px; letter-spacing:3px; text-transform:uppercase; color:var(--gold2); margin-bottom:22px; font-weight:600;">{{ t.hero.eyebrow }}</div>
+        <h1 style="font-family:var(--serif); font-weight:600; color:var(--ink); font-size:clamp(38px,6vw,72px); line-height:1.08; margin:0 0 8px;">{{ t.hero.titleTop }}</h1>
+        <div style="font-family:var(--script); font-size:clamp(48px,8vw,96px); line-height:1; background:linear-gradient(120deg, var(--gold) 0%, var(--gold2) 60%, #ffd8a8 100%); -webkit-background-clip:text; background-clip:text; color:transparent; margin:0 0 28px; filter:drop-shadow(0 0 22px rgba(232,88,12,0.35));">{{ t.hero.titleScript }}</div>
+        <p style="font-size:18px; line-height:1.7; color:var(--muted); max-width:540px; margin:0 0 40px; font-weight:300;">{{ t.hero.sub }}</p>
+        <div style="display:flex; flex-wrap:wrap; gap:18px;">
+          <a href="#contact" style="background:linear-gradient(120deg, var(--gold), var(--gold2)); color:#171310; text-decoration:none; padding:16px 34px; border-radius:2px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; font-weight:600; transition:transform .3s, box-shadow .3s;" style-hover="transform:translateY(-2px); box-shadow:0 12px 28px rgba(232,88,12,0.35);">{{ t.hero.ctaPrimary }}</a>
+          <a href="#collection" style="border:1px solid rgba(244,239,232,0.35); color:var(--ink); text-decoration:none; padding:16px 34px; border-radius:2px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; font-weight:500; transition:border-color .3s, background .3s;" style-hover="border-color:var(--gold2); background:rgba(232,88,12,0.08);">{{ t.hero.ctaSecondary }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" data-screen-label="about" style="padding:140px 28px; background:var(--bg);">
+    <div data-reveal style="opacity:0; transform:translateY(24px); max-width:1360px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center;" class="__about-grid">
+      <div>
+        <div style="font-family:var(--sans); font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--gold2); margin-bottom:16px; font-weight:600;">{{ t.about.kicker }}</div>
+        <h2 style="font-family:var(--serif); font-size:clamp(30px,4vw,46px); font-weight:600; margin:0 0 28px; color:var(--ink);">{{ t.about.title }}</h2>
+        <p style="font-size:17px; line-height:1.8; color:var(--muted); margin:0 0 20px; font-weight:300;">{{ t.about.p1 }}</p>
+        <p style="font-size:17px; line-height:1.8; color:var(--muted); margin:0; font-weight:300;">{{ t.about.p2 }}</p>
+      </div>
+      <div style="border:1px solid var(--line); border-radius:2px; padding:44px 38px; background:linear-gradient(160deg, var(--panel), var(--bg2));">
+        <p style="font-family:var(--serif); font-style:italic; font-size:24px; line-height:1.55; color:var(--gold2); margin:0;">{{ t.about.highlight }}</p>
+      </div>
+    </div>
+
+    <!-- benefits -->
+    <div style="max-width:1360px; margin:90px auto 0; display:grid; grid-template-columns:repeat(4,1fr); gap:24px;" class="__benefits-grid">
+      <sc-for list="{{ t.benefits }}" as="b" hint-placeholder-count="4">
+        <div data-reveal style="opacity:0; transform:translateY(24px); text-align:center; padding:34px 18px; border:1px solid var(--line); transition:border-color .3s, background .3s;" style-hover="border-color:var(--gold2); background:rgba(232,88,12,0.05);">
+          <div style="width:52px; height:52px; border-radius:50%; border:1px solid var(--gold2); margin:0 auto 20px; display:flex; align-items:center; justify-content:center;">
+            <div style="width:8px; height:8px; border-radius:50%; background:var(--gold2);"></div>
+          </div>
+          <div style="font-family:var(--serif); font-size:17px; color:var(--ink); font-weight:600;">{{ b.title }}</div>
+        </div>
+      </sc-for>
+    </div>
+
+    <!-- why modulex -->
+    <div data-reveal style="opacity:0; transform:translateY(24px); max-width:1360px; margin:90px auto 0; border:1px solid var(--line); padding:52px; background:var(--panel);" class="__why-box">
+      <h3 style="font-family:var(--serif); font-size:26px; color:var(--ink); margin:0 0 30px; font-weight:600;">{{ t.why.title }}</h3>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px 60px;" class="__why-grid">
+        <sc-for list="{{ t.why.items }}" as="w" hint-placeholder-count="4">
+          <div style="display:flex; align-items:flex-start; gap:14px;">
+            <span style="color:var(--gold2); font-size:15px; margin-top:2px; flex-shrink:0;">✓</span>
+            <span style="font-size:16px; color:var(--muted); line-height:1.6; font-weight:300;">{{ w }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section id="collection" data-screen-label="collection" style="padding:140px 28px 40px; background:linear-gradient(180deg, var(--bg), var(--bg2));">
+    <div style="max-width:1360px; margin:0 auto 100px; text-align:center;">
+      <div style="font-family:var(--sans); font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--gold2); margin-bottom:16px; font-weight:600;">{{ t.collectionKicker }}</div>
+      <h2 style="font-family:var(--serif); font-size:clamp(32px,4vw,48px); font-weight:600; margin:0; color:var(--ink);">{{ t.collectionTitle }}</h2>
+    </div>
+
+    <!-- 01 olives -->
+    <div data-reveal style="opacity:0; transform:translateY(24px); max-width:1360px; margin:0 auto 130px; display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center;" class="__sec-grid">
+      <div>
+        <img src="{{ t.sections.olives.image }}" alt="{{ t.sections.olives.title }}" style="width:100%; height:520px; object-fit:cover; border-radius:2px;" />
+      </div>
+      <div>
+        <div style="font-family:var(--serif); font-size:15px; color:var(--gold2); margin-bottom:10px; letter-spacing:2px;">{{ t.sections.olives.num }}</div>
+        <h3 style="font-family:var(--serif); font-size:clamp(26px,3vw,38px); color:var(--ink); font-weight:600; margin:0 0 20px;">{{ t.sections.olives.title }}</h3>
+        <p style="font-size:16px; line-height:1.8; color:var(--muted); margin:0 0 26px; font-weight:300;">{{ t.sections.olives.text }}</p>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <sc-for list="{{ t.sections.olives.bullets }}" as="bl" hint-placeholder-count="4">
+            <div style="display:flex; align-items:center; gap:12px;">
+              <span style="width:6px; height:6px; border-radius:50%; background:var(--gold2); flex-shrink:0;"></span>
+              <span style="font-size:15px; color:var(--muted); font-weight:300;">{{ bl }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 old olives -->
+    <div data-reveal style="opacity:0; transform:translateY(24px); max-width:1360px; margin:0 auto 130px;">
+      <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:14px;">
+        <span style="font-family:var(--serif); font-size:15px; color:var(--gold2); letter-spacing:2px;">{{ t.sections.oldOlives.num }}</span>
+        <h3 style="font-family:var(--serif); font-size:clamp(26px,3vw,38px); color:var(--ink); font-weight:600; margin:0;">{{ t.sections.oldOlives.title }}</h3>
+      </div>
+      <p style="font-size:16px; line-height:1.8; color:var(--muted); margin:0 0 44px; font-weight:300; max-width:640px;">{{ t.sections.oldOlives.text }}</p>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:24px;" class="__cards-4">
+        <sc-for list="{{ t.sections.oldOlives.items }}" as="it" hint-placeholder-count="4">
+          <div style="border:1px solid var(--line); overflow:hidden; transition:transform .35s, border-color .35s;" style-hover="transform:translateY(-6px); border-color:var(--gold2);">
+            <img src="{{ it.image }}" alt="{{ it.name }}" style="width:100%; height:280px; object-fit:cover; display:block;" />
+            <div style="padding:22px;">
+              <div style="font-family:var(--serif); font-size:19px; color:var(--ink); font-weight:600; margin-bottom:12px;">{{ it.name }}</div>
+              <a href="#contact" style="display:inline-block; font-size:12px; letter-spacing:1.2px; text-transform:uppercase; color:var(--gold2); text-decoration:none; border-bottom:1px solid var(--gold2); padding-bottom:3px;">{{ t.priceLabel }}</a>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- 03 exotic -->
+    <div data-reveal style="opacity:0; transform:translateY(24px); max-width:1360px; margin:0 auto 130px;">
+      <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:14px;">
+        <span style="font-family:var(--serif); font-size:15px; color:var(--gold2); letter-spacing:2px;">{{ t.sections.exotic.num }}</span>
+        <h3 style="font-family:var(--serif); font-size:clamp(26px,3vw,38px); color:var(--ink); font-weight:600; margin:0;">{{ t.sections.exotic.title }}</h3>
+      </div>
+      <p style="font-size:16px; line-height:1.8; color:var(--muted); margin:0 0 44px; font-weight:300; max-width:640px;">{{ t.sections.exotic.text }}</p>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-bottom:36px;" class="__cards-4">
+        <sc-for list="{{ t.sections.exotic.items }}" as="it" hint-placeholder-count="4">
+          <div style="border:1px solid var(--line); overflow:hidden; transition:transform .35s, border-color .35s;" style-hover="transform:translateY(-6px); border-color:var(--gold2);">
+            <img src="{{ it.image }}" alt="{{ it.name }}" style="width:100%; height:280px; object-fit:cover; display:block;" />
+            <div style="padding:22px;">
+              <div style="font-family:var(--serif); font-size:18px; color:var(--ink); font-weight:600; margin-bottom:12px;">{{ it.name }}</div>
+              <a href="#contact" style="display:inline-block; font-size:12px; letter-spacing:1.2px; text-transform:uppercase; color:var(--gold2); text-decoration:none; border-bottom:1px solid var(--gold2); padding-bottom:3px;">{{ t.priceLabel }}</a>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:28px;">
+        <sc-for list="{{ t.sections.exotic.bullets }}" as="bl" hint-placeholder-count="3">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:var(--gold2); flex-shrink:0;"></span>
+            <span style="font-size:15px; color:var(--muted); font-weight:300;">{{ bl }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- 04 palms -->
+    <div data-reveal style="opacity:0; transform:translateY(24px); max-width:1360px; margin:0 auto 130px;">
+      <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:14px;">
+        <span style="font-family:var(--serif); font-size:15px; color:var(--gold2); letter-spacing:2px;">{{ t.sections.palms.num }}</span>
+        <h3 style="font-family:var(--serif); font-size:clamp(26px,3vw,38px); color:var(--ink); font-weight:600; margin:0;">{{ t.sections.palms.title }}</h3>
+      </div>
+      <p style="font-size:16px; line-height:1.8; color:var(--muted); margin:0 0 44px; font-weight:300; max-width:640px;">{{ t.sections.palms.text }}</p>
+      <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:20px;" class="__cards-5">
+        <sc-for list="{{ t.sections.palms.items }}" as="it" hint-placeholder-count="5">
+          <div style="border:1px solid var(--line); overflow:hidden; transition:transform .35s, border-color .35s;" style-hover="transform:translateY(-6px); border-color:var(--gold2);">
+            <img src="{{ it.image }}" alt="{{ it.name }}" style="width:100%; height:260px; object-fit:cover; display:block;" />
+            <div style="padding:18px;">
+              <div style="font-family:var(--serif); font-size:15px; color:var(--ink); font-weight:600; margin-bottom:10px;">{{ it.name }}</div>
+              <a href="#contact" style="display:inline-block; font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--gold2); text-decoration:none; border-bottom:1px solid var(--gold2); padding-bottom:3px;">{{ t.priceLabel }}</a>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- 05 rental -->
+    <div data-reveal style="opacity:0; transform:translateY(24px); max-width:1360px; margin:0 auto 40px;">
+      <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:14px;">
+        <span style="font-family:var(--serif); font-size:15px; color:var(--gold2); letter-spacing:2px;">{{ t.sections.rental.num }}</span>
+        <h3 style="font-family:var(--serif); font-size:clamp(26px,3vw,38px); color:var(--ink); font-weight:600; margin:0;">{{ t.sections.rental.title }}</h3>
+      </div>
+      <p style="font-size:16px; line-height:1.8; color:var(--muted); margin:0 0 44px; font-weight:300; max-width:640px;">{{ t.sections.rental.text }}</p>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;" class="__cards-3">
+        <sc-for list="{{ t.sections.rental.cards }}" as="c" hint-placeholder-count="3">
+          <div style="border:1px solid var(--line); padding:40px 30px; background:var(--panel); text-align:center; transition:border-color .3s, transform .3s;" style-hover="border-color:var(--gold2); transform:translateY(-6px);">
+            <div style="font-family:var(--serif); font-size:19px; color:var(--ink); font-weight:600; margin-bottom:24px; line-height:1.4;">{{ c }}</div>
+            <a href="#contact" style="display:inline-block; font-size:12px; letter-spacing:1.2px; text-transform:uppercase; color:var(--gold2); text-decoration:none; border-bottom:1px solid var(--gold2); padding-bottom:3px;">{{ t.priceLabel }}</a>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSPIRATION -->
+  <section id="inspiration" data-screen-label="inspiration" style="padding:140px 28px; background:var(--bg2);">
+    <div style="max-width:1360px; margin:0 auto 70px; text-align:center;">
+      <div style="font-family:var(--sans); font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--gold2); margin-bottom:16px; font-weight:600;">{{ t.inspiration.kicker }}</div>
+      <h2 style="font-family:var(--serif); font-size:clamp(30px,4vw,46px); font-weight:600; margin:0; color:var(--ink);">{{ t.inspiration.title }}</h2>
+    </div>
+    <div data-reveal style="opacity:0; transform:translateY(24px); max-width:1360px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:20px;" class="__insp-grid">
+      <sc-for list="{{ t.inspiration.items }}" as="ins" hint-placeholder-count="12">
+        <div style="position:relative; height:220px; overflow:hidden; border-radius:2px; cursor:default;">
+          <img src="{{ ins.image }}" alt="{{ ins.name }}" style="width:100%; height:100%; object-fit:cover; display:block; transition:transform .5s;" style-hover="transform:scale(1.06);" />
+          <div style="position:absolute; inset:0; background:linear-gradient(180deg, transparent 40%, rgba(11,10,9,0.9) 100%);"></div>
+          <div style="position:absolute; left:18px; bottom:16px; font-family:var(--serif); font-size:18px; color:var(--ink); font-weight:600;">{{ ins.name }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" data-screen-label="services" style="padding:140px 28px; background:var(--bg);">
+    <div style="max-width:1360px; margin:0 auto; text-align:center;">
+      <div style="font-family:var(--sans); font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--gold2); margin-bottom:16px; font-weight:600;">{{ t.service.kicker }}</div>
+      <h2 style="font-family:var(--serif); font-size:clamp(30px,4vw,46px); font-weight:600; margin:0 0 16px; color:var(--ink);">{{ t.service.title }}</h2>
+      <p style="font-size:17px; color:var(--muted); margin:0 0 70px; font-weight:300;">{{ t.service.sub }}</p>
+    </div>
+    <div data-reveal style="opacity:0; transform:translateY(24px); max-width:1360px; margin:0 auto; display:grid; grid-template-columns:repeat(5,1fr); gap:24px;" class="__service-grid">
+      <sc-for list="{{ t.service.steps }}" as="s" hint-placeholder-count="5">
+        <div style="text-align:center; padding:0 12px;">
+          <div style="width:60px; height:60px; border-radius:50%; border:1px solid var(--gold2); display:flex; align-items:center; justify-content:center; margin:0 auto 22px; font-family:var(--serif); font-size:20px; color:var(--gold2);">{{ $index }}</div>
+          <div style="font-size:15px; color:var(--ink); font-weight:500; line-height:1.5;">{{ s.title }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact" data-screen-label="contact" style="background:var(--bg2); border-top:1px solid var(--line); padding:120px 28px 0;">
+    <div style="max-width:1360px; margin:0 auto; text-align:center; margin-bottom:90px;">
+      <div style="font-family:var(--sans); font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--gold2); margin-bottom:16px; font-weight:600;">{{ t.contact.kicker }}</div>
+      <h2 style="font-family:var(--serif); font-size:clamp(30px,4vw,46px); font-weight:600; margin:0 0 16px; color:var(--ink);">{{ t.contact.title }}</h2>
+      <p style="font-size:17px; color:var(--muted); margin:0 0 46px; font-weight:300; max-width:560px; margin-left:auto; margin-right:auto;">{{ t.contact.sub }}</p>
+      <div style="display:flex; flex-wrap:wrap; gap:18px; justify-content:center;">
+        <a href="tel:+381658226672" style="background:linear-gradient(120deg, var(--gold), var(--gold2)); color:#171310; text-decoration:none; padding:16px 34px; border-radius:2px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; font-weight:600; transition:transform .3s, box-shadow .3s;" style-hover="transform:translateY(-2px); box-shadow:0 12px 28px rgba(232,88,12,0.35);">{{ t.contact.ctaCall }}</a>
+        <a href="mailto:modulexRe@proton.me" style="border:1px solid rgba(244,239,232,0.35); color:var(--ink); text-decoration:none; padding:16px 34px; border-radius:2px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; font-weight:500; transition:border-color .3s, background .3s;" style-hover="border-color:var(--gold2); background:rgba(232,88,12,0.08);">{{ t.contact.ctaEmail }}</a>
+      </div>
+    </div>
+
+    <div style="max-width:1360px; margin:0 auto; border-top:1px solid var(--line); padding:56px 0; display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:50px;" class="__footer-grid">
+      <div>
+        <img src="assets/logo.png" alt="ModuleXVB" style="height:44px; width:auto; margin-bottom:18px;" />
+        <p style="font-size:14px; color:var(--muted); font-weight:300; max-width:280px; line-height:1.6;">{{ t.footer.tagline }}</p>
+        <p style="font-size:13px; color:var(--muted); font-weight:300; margin-top:14px; letter-spacing:0.5px;">modulexvbdecor.com</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <a href="tel:+381658226672" style="color:var(--muted); text-decoration:none; font-size:14px; transition:color .25s;" style-hover="color:var(--gold2);">+381 65 822 6672</a>
+        <a href="tel:+381659243544" style="color:var(--muted); text-decoration:none; font-size:14px; transition:color .25s;" style-hover="color:var(--gold2);">+381 65 9243 544</a>
+        <a href="mailto:modulexRe@proton.me" style="color:var(--muted); text-decoration:none; font-size:14px; transition:color .25s;" style-hover="color:var(--gold2);">modulexRe@proton.me</a>
+        <span style="color:var(--muted); font-size:14px;">{{ t.contact.location }}</span>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <a href="#about" style="color:var(--muted); text-decoration:none; font-size:14px; transition:color .25s;" style-hover="color:var(--gold2);">{{ t.nav.about }}</a>
+        <a href="#collection" style="color:var(--muted); text-decoration:none; font-size:14px; transition:color .25s;" style-hover="color:var(--gold2);">{{ t.nav.collection }}</a>
+        <a href="#inspiration" style="color:var(--muted); text-decoration:none; font-size:14px; transition:color .25s;" style-hover="color:var(--gold2);">{{ t.nav.inspiration }}</a>
+        <a href="#services" style="color:var(--muted); text-decoration:none; font-size:14px; transition:color .25s;" style-hover="color:var(--gold2);">{{ t.nav.services }}</a>
+      </div>
+    </div>
+
+    <div style="max-width:1360px; margin:0 auto; padding:26px 0; border-top:1px solid var(--line); text-align:center;">
+      <span style="font-size:12px; color:var(--muted); letter-spacing:0.5px;">© {{ year }} ModuleXVB. {{ t.footer.rights }}</span>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    lang: 'sr',
+    sr: null,
+    en: null,
+    scrolled: false,
+    navOpen: false,
+  };
+
+  async componentDidMount() {
+    const mod = await import('./content.js');
+    this.setState({ sr: mod.SR, en: mod.EN });
+
+    this._onScroll = () => {
+      const scrolled = window.scrollY > 40;
+      if (scrolled !== this.state.scrolled) this.setState({ scrolled });
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+
+    this._observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.transition = 'opacity 0.9s ease, transform 0.9s ease';
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          this._observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    this._root = this.el || document;
+    const targets = (this.el || document).querySelectorAll('[data-reveal]');
+    targets.forEach((el) => this._observer.observe(el));
+  }
+
+  componentWillUnmount() {
+    if (this._onScroll) window.removeEventListener('scroll', this._onScroll);
+    if (this._observer) this._observer.disconnect();
+  }
+
+  renderVals() {
+    const t = this.state.lang === 'sr' ? this.state.sr : this.state.en;
+    const fallback = {
+      nav: {}, hero: {}, about: {}, benefits: [], why: { items: [] },
+      sections: { olives: { bullets: [] }, oldOlives: { items: [] }, exotic: { items: [], bullets: [] }, palms: { items: [] }, rental: { cards: [] } },
+      inspiration: { items: [] }, service: { steps: [] }, contact: {}, footer: {},
+    };
+    const active = t || fallback;
+
+    const headerStyle = {
+      position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
+      background: this.state.scrolled ? 'rgba(11,10,9,0.92)' : 'rgba(11,10,9,0.0)',
+      backdropFilter: this.state.scrolled ? 'blur(10px)' : 'none',
+      borderBottom: this.state.scrolled ? '1px solid rgba(232,88,12,0.2)' : '1px solid transparent',
+      transition: 'background .35s ease, border-color .35s ease',
+    };
+
+    const langBtn = (isActive) => ({
+      background: isActive ? 'linear-gradient(120deg,#e8580c,#ff9a4d)' : 'transparent',
+      color: isActive ? '#171310' : '#f4efe8',
+      border: 'none',
+      padding: '7px 14px',
+      fontSize: '12px',
+      fontWeight: 600,
+      letterSpacing: '1px',
+      cursor: 'pointer',
+      fontFamily: 'Montserrat, Arial, sans-serif',
+      transition: 'background .25s, color .25s',
+    });
+
+    const mobileNavStyle = {
+      position: 'fixed', inset: 0, top: '72px',
+      background: 'rgba(11,10,9,0.98)',
+      display: this.state.navOpen ? 'flex' : 'none',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: '30px',
+      zIndex: 99,
+    };
+
+    return {
+      t: active,
+      year: new Date().getFullYear(),
+      headerStyle,
+      langSrStyle: langBtn(this.state.lang === 'sr'),
+      langEnStyle: langBtn(this.state.lang === 'en'),
+      mobileNavStyle,
+      setLangSr: () => this.setState({ lang: 'sr' }),
+      setLangEn: () => this.setState({ lang: 'en' }),
+      toggleNav: () => this.setState((s) => ({ navOpen: !s.navOpen })),
+      closeNav: () => this.setState({ navOpen: false }),
+    };
+  }
+}
+
+</script>
+</body>
+</html>
