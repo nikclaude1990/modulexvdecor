@@ -126,7 +126,7 @@ window.SR = {
   contact: {
     kicker: "Kontakt",
     title: "Stupite u kontakt",
-    sub: "Recite nam o svom prostoru i događaju — pripremićemo predlog kolekcije za vas.",
+    sub: "Recite nam o svom prostoru i događaju - pripremićemo predlog kolekcije za vas.",
     location: "Novi Sad, Srbija",
     ctaCall: "Pozovite nas",
     ctaEmail: "Pošaljite email",
@@ -264,7 +264,7 @@ window.EN = {
   contact: {
     kicker: "Contact",
     title: "Get in touch",
-    sub: "Tell us about your space and event — we'll prepare a collection proposal for you.",
+    sub: "Tell us about your space and event - we'll prepare a collection proposal for you.",
     location: "Novi Sad, Serbia",
     ctaCall: "Call us",
     ctaEmail: "Send an email",
